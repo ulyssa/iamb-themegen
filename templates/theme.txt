@@ -1,0 +1,81 @@
+# {{name}} theme for iamb
+#
+# You can place this directly in your `~/.config/iamb/themes` directory to make it
+# discoverable, or copy its contents directly into your `config.toml`.
+#
+# If you are looking to remix this file to make a derived theme, the colors were
+# picked and assigned as:
+#
+# COLOR_BG1 => Primary background ({{theme.color_bg1}})
+# COLOR_BG2 => Alternate background ({{theme.color_bg2}})
+# COLOR_BG3 => Completion menu text, drawn reversed over COLOR_UI1 ({{theme.color_bg3}})
+#
+# COLOR_UI1 => Window border color, completion menu background ({{theme.color_ui1}})
+# COLOR_UI2 => Window title color ({{theme.color_ui2}})
+#
+# COLOR_WARN1 => Errors, unencrypted, etc. - typically a red ({{theme.color_warn1}})
+# COLOR_WARN2 => Redacted messages - typically a red or light orange ({{theme.color_warn2}})
+# COLOR_WARN3 => Unknown encryption status - typically a yellow ({{theme.color_warn3}})
+#
+# COLOR_GOOD1 => Encrypted indicator - typically a green ({{theme.color_good1}})
+#
+# COLOR_TEXT1 => Primary text color ({{theme.color_text1}})
+# COLOR_TEXT2 => Contrast text color, should differ from COLOR_TEXT1 ({{theme.color_text2}})
+# COLOR_TEXT3 => Alternate text color ({{theme.color_text3}})
+# COLOR_TEXT4 => Alternate text color ({{theme.color_text4}})
+# COLOR_TEXT5 => Alternate text color ({{theme.color_text5}})
+#
+#{% if !theme.color_plus.is_empty() %} COLOR_PLUS => Extra colors used for user names: {{ theme.color_plus|join(" ") }}{% endif %}
+[theme.users]
+colors = [
+    "{{theme.color_warn1}}",
+    "{{theme.color_warn2}}",
+    "{{theme.color_warn3}}",
+    "{{theme.color_good1}}",
+    "{{theme.color_text2}}",
+    "{{theme.color_text3}}",
+    "{{theme.color_text4}}",
+    "{{theme.color_text5}}",
+{% for color in theme.color_plus %}    "{{color}}",
+{% endfor %}]
+
+[theme.default]
+color = "{{theme.color_text1}}"
+background = "{{theme.color_bg1}}"
+
+[theme.completion]
+default.background = "{{theme.color_bg3}}"
+default.color = "{{theme.color_ui1}}"
+selected.background = "{{theme.color_bg2}}"
+selected.color = "{{theme.color_text1}}"
+
+[theme.timeline]
+redacted.color = "{{theme.color_warn2}}"
+
+[theme.messages]
+code.color = "{{theme.color_text2}}"
+code.background = "{{theme.color_bg2}}"
+emphasis.color = "{{theme.color_text4}}"
+strong.color = "{{theme.color_text3}}"
+
+[theme.rooms]
+default.color = "{{theme.color_text5}}"
+labels.color = "{{theme.color_text4}}"
+unread.name.color = "{{theme.color_text2}}"
+unread.number.color = "{{theme.color_text4}}"
+mention.number.color = "{{theme.color_warn1}}"
+notification.number.color = "{{theme.color_warn3}}"
+marked_unread.number.color = "{{theme.color_good1}}"
+
+[theme.windows]
+border.color = "{{theme.color_ui1}}"
+title.color = "{{theme.color_ui2}}"
+
+[theme.encryption]
+icon_encrypted.color = "{{theme.color_good1}}"
+icon_unencrypted.color = "{{theme.color_warn1}}"
+icon_unknown.color = "{{theme.color_warn3}}"
+
+[theme.cmdbar]
+error.color = "{{theme.color_warn1}}"
+
