@@ -91,8 +91,7 @@ def theme_template():
 """
 
     if THEME_DEBUG:
-        out = out + """
-#
+        out = out + """#
 # If you are looking to remix this file to make a derived theme, the colors were
 # picked and assigned as:
 #
@@ -208,7 +207,7 @@ def colorscheme_to_toml(name, colorscheme, is_dark):
 
     lf = len(others)
 
-    if lf < 11:
+    if lf < 10:
         # Some color schemes just don't have that many colors, so we just
         # skip them here rather than generate something that would have
         # most usernames rendered in the same small set of colors.
@@ -240,7 +239,15 @@ def colorscheme_to_toml(name, colorscheme, is_dark):
     text2 = others.pop()
     text3 = others.pop()
     text4 = others.pop()
-    text5 = others.pop()
+
+    if lf == 10:
+        # Too few colors, just make `text5` the same as `text1`:
+        text5 = text1
+    else:
+        # We have plenty of colors, so we can use an extra one
+        # in room lists for read rooms:
+        text5 = others.pop()
+
     ui1 = others.pop()
 
     # Use any remaining contrasting colors for usernames:
