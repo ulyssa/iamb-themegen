@@ -7,8 +7,6 @@ import sys
 from colormath2.color_objects import sRGBColor, LabColor
 from colormath2.color_conversions import convert_color
 from colormath2.color_diff import delta_e_cie2000
-from pathlib import Path
-from string import Template
 
 THEME_DEBUG = os.getenv("THEME_DEBUG", "false") != "false"
 USE_CIELAB = os.getenv("THEME_CIELAB", "true") != "false"
@@ -83,93 +81,7 @@ def get_distance_to_hex(h1, h2):
         r, g, b = hex_to_rgb(h2)
         return get_distance_to_color(h1, r, g, b)
 
-def theme_template():
-    out = """# ${NAME} theme for iamb
-#
-# You can place this directly in your `~/.config/iamb/themes` directory to make it
-# discoverable, or copy its contents directly into your `config.toml`.
-"""
-
-    if THEME_DEBUG:
-        out = out + """#
-# If you are looking to remix this file to make a derived theme, the colors were
-# picked and assigned as:
-#
-# COLOR_BG1 => Primary background (${COLOR_BG1})
-# COLOR_BG2 => Alternate background (${COLOR_BG2})
-# COLOR_BG3 => Completion menu selected item background (${COLOR_BG3})
-#
-# COLOR_UI1 => Window border color, text completion menu (${COLOR_UI1})
-# COLOR_UI2 => Window title color (${COLOR_UI2})
-#
-# COLOR_WARN1 => Errors, unencrypted, etc. - typically a red (${COLOR_WARN1})
-# COLOR_WARN2 => Redacted messages - typically a red or light orange (${COLOR_WARN2})
-# COLOR_WARN3 => Unknown encryption status - typically a yellow (${COLOR_WARN3})
-#
-# COLOR_GOOD1 => Encrypted indicator - typically a green (${COLOR_GOOD1})
-#
-# COLOR_TEXT1 => Primary text color (${COLOR_TEXT1})
-# COLOR_TEXT2 => Contrast text color, should differ from COLOR_TEXT1 (${COLOR_TEXT2})
-# COLOR_TEXT3 => Alternate text color (${COLOR_TEXT3})
-# COLOR_TEXT4 => Alternate text color (${COLOR_TEXT4})
-# COLOR_TEXT5 => Alternate text color (${COLOR_TEXT5})
-#
-# COLOR_PLUS => Extra user colors used for users: ${COLOR_PLUS}
-"""
-
-    out = out + """[theme.users]
-colors = [
-    "${COLOR_WARN1}",
-    "${COLOR_WARN2}",
-    "${COLOR_WARN3}",
-    "${COLOR_GOOD1}",
-    "${COLOR_TEXT2}",
-    "${COLOR_TEXT3}",
-    "${COLOR_TEXT4}",
-    "${COLOR_TEXT5}",
-    ${COLOR_PLUS}
-]
-
-[theme.default]
-color = "${COLOR_TEXT1}"
-background = "${COLOR_BG1}"
-
-[theme.completion]
-default.background = "${COLOR_BG3}"
-default.color = "${COLOR_UI1}"
-selected.background = "${COLOR_BG2}"
-selected.color = "${COLOR_TEXT1}"
-
-[theme.timeline]
-redacted.color = "${COLOR_WARN2}"
-
-[theme.messages]
-code.color = "${COLOR_TEXT2}"
-code.background = "${COLOR_BG2}"
-emphasis.color = "${COLOR_TEXT4}"
-strong.color = "${COLOR_TEXT3}"
-
-[theme.rooms]
-default.color = "${COLOR_TEXT5}"
-unread.color = "${COLOR_TEXT2}"
-labels.color = "${COLOR_TEXT4}"
-
-[theme.windows]
-border.color = "${COLOR_UI1}"
-title.color = "${COLOR_UI2}"
-
-[theme.encryption]
-icon_encrypted.color = "${COLOR_GOOD1}"
-icon_unencrypted.color = "${COLOR_WARN1}"
-icon_unknown.color = "${COLOR_WARN3}"
-
-[theme.cmdbar]
-error.color = "${COLOR_WARN1}"
-"""
-
-    return Template(out)
-
-def colorscheme_to_toml(name, colorscheme, is_dark):
+def colorscheme_assign(name, colorscheme, is_dark):
     mapped = {}
     backgrounds = set()
     foregrounds = set()
@@ -195,9 +107,15 @@ def colorscheme_to_toml(name, colorscheme, is_dark):
             print(f"Skipping {name} due to insufficient background colors ({lb})")
         return None
 
-    mapped["COLOR_BG1"] = backgrounds[0]
-    mapped["COLOR_BG2"] = backgrounds[1]
-    mapped["COLOR_BG3"] = backgrounds[2]
+    if is_dark:
+        mapped["COLOR_BG1"] = backgrounds[0]
+        mapped["COLOR_BG2"] = backgrounds[1]
+        mapped["COLOR_BG3"] = backgrounds[2]
+    else:
+        mapped["COLOR_BG1"] = backgrounds[1]
+        mapped["COLOR_BG2"] = backgrounds[0]
+        mapped["COLOR_BG3"] = backgrounds[2]
+
     bg1 = mapped["COLOR_BG1"]
 
     # Filter out colors too close to COLOR_BG1 from the foreground:
@@ -207,7 +125,7 @@ def colorscheme_to_toml(name, colorscheme, is_dark):
 
     lf = len(others)
 
-    if lf < 10:
+    if lf < 9:
         # Some color schemes just don't have that many colors, so we just
         # skip them here rather than generate something that would have
         # most usernames rendered in the same small set of colors.
@@ -238,19 +156,29 @@ def colorscheme_to_toml(name, colorscheme, is_dark):
     ui2 = others.pop()
     text2 = others.pop()
     text3 = others.pop()
-    text4 = others.pop()
 
-    if lf == 10:
-        # Too few colors, just make `text5` the same as `text1`:
-        text5 = text1
+    # At this point, we've used 9 foreground colors, and might be out!
+    #
+    # If we do have more, we'll try to use any remaining contrasting colors
+    # for usernames, and some other text.
+    if lf > 9:
+        # We have plenty of colors, so we can use an extra one
+        # for italicized text and room labels:
+        text4 = others.pop()
     else:
+        # Too few colors, just make `text4` the same as `text1`:
+        text4 = text1
+
+    if lf > 10:
         # We have plenty of colors, so we can use an extra one
         # in room lists for read rooms:
         text5 = others.pop()
+    else:
+        # Too few colors, just make `text5` the same as `text1`:
+        text5 = text1
 
     ui1 = others.pop()
 
-    # Use any remaining contrasting colors for usernames:
     users = []
 
     for color in others:
@@ -263,7 +191,7 @@ def colorscheme_to_toml(name, colorscheme, is_dark):
     users = [f'"{c}"' for c in users]
     users = ", ".join(users)
 
-    # Put them into the template:
+    # Put them into the template map:
     mapped["COLOR_WARN1"] = red1
     mapped["COLOR_WARN2"] = red2
     mapped["COLOR_WARN3"] = yellow
@@ -276,53 +204,61 @@ def colorscheme_to_toml(name, colorscheme, is_dark):
     mapped["COLOR_UI1"] = ui1
     mapped["COLOR_UI2"] = ui2
     mapped["COLOR_PLUS"] = users
-    mapped["NAME"] = name
 
-    return theme_template().substitute(mapped)
+    return mapped 
 
-def generate_maybe(directory, name, colorscheme, is_dark):
+def assign_maybe(name, colorscheme, is_dark):
     if colorscheme is None:
-        return
+        return None
+    return colorscheme_assign(name, colorscheme, is_dark)
 
-    out = colorscheme_to_toml(name, colorscheme, is_dark)
-
-    if out is None:
-        return
-
-    Path(directory).mkdir(parents=True, exist_ok=True)
-
-    with open(f"{directory}/{name}.toml", "w", encoding="utf-8") as file:
-        file.write(out)
-
-def generate_colorschemes(d, c):
+def assign_colorschemes(c):
     name = c["name"]
-    generate_maybe(d, f"{name}-light", c["data"].get("light", {}), False)
-    generate_maybe(d, f"{name}-dark", c["data"].get("dark", {}), True)
+    data = {}
 
-def generate_repo(repo):
-    # Set up the directory structure to mirror GitHub owner/repo, since
-    # the source JSON contains multiple repositories that contain themes
-    # of the same name, which would cause us to overwrite output with
-    # different, slight variations of the colorscheme:
-    owner = repo["owner"]["name"]
-    name = repo["name"]
-    directory = f"target/{owner}/{name}"
+    light = assign_maybe(f"{name}-light", c["data"].get("light", None), False)
+    if light is not None:
+        data["light"] = light
 
-    for colorschemes in repo["vimColorSchemes"]:
-        generate_colorschemes(directory, colorschemes)
+    dark = assign_maybe(f"{name}-dark", c["data"].get("dark", None), True)
+    if dark is not None:
+        data["dark"] = dark
+
+    if len(data) == 0:
+        return None
+
+    return {
+        "name": name,
+        "data": data,
+    }
+
+def assign_repo(repo):
+    colors = [assign_colorschemes(c) for c in repo["vimColorSchemes"]]
+    colors = [c for c in colors if c is not None]
+
+    return {
+        "name": repo["name"],
+        "owner": repo["owner"],
+        "vimColorSchemes": colors
+    }
 
 def main(source, stars):
     with open(source, 'r') as file:
         source = json.load(file)
 
-    for repo in source:
-        if repo["stargazersCount"] < stars:
-            continue
-        generate_repo(repo)
+    repos = [assign_repo(repo) for repo in source if repo["stargazersCount"] < stars]
+    repos = [repo for repo in repos if repo is not None]
+
+    json.dump(repos, sys.stdout, indent=2)
+
 
 if len(sys.argv) < 2 or len(sys.argv) > 3:
     print("""
     Usage: vim2iamb.py input.json [minimum stars]
+
+    This script rewrites the colorschemes from the vimcolorschemes.com site into
+    a set of color assignments that can be used with `expand.py` to generate
+    themes for iamb.
 
     Example:
 
