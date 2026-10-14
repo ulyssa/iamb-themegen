@@ -188,8 +188,6 @@ def colorscheme_assign(name, colorscheme, is_dark):
 
     # Sort to ensure `.toml` output is stable:
     users.sort()
-    users = [f'"{c}"' for c in users]
-    users = ", ".join(users)
 
     # Put them into the template map:
     mapped["COLOR_WARN1"] = red1

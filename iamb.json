@@ -6,12 +6,34 @@
         },
         "vimColorSchemes": [
             {
+                "name": "aurora",
+                "data": {
+                    "dark": {
+                        "COLOR_BG1": "#0B0B14",
+                        "COLOR_BG2": "#1B1B24",
+                        "COLOR_BG3": "#FF4040",
+                        "COLOR_UI1": "#3A3A47",
+                        "COLOR_UI2": "#FF4040",
+                        "COLOR_WARN1": "#69697C",
+                        "COLOR_WARN2": "#E0E2EA",
+                        "COLOR_WARN3": "#FFCB65",
+                        "COLOR_GOOD1": "#9CEB4F",
+                        "COLOR_TEXT1": "#18FFE0",
+                        "COLOR_TEXT2": "#9D8CFF",
+                        "COLOR_TEXT3": "#31BAFF",
+                        "COLOR_TEXT4": "#CFCFDD",
+                        "COLOR_TEXT5": "#18FFE0",
+                        "COLOR_PLUS": []
+                    }
+                }
+            },
+            {
                 "name": "ayu",
                 "data": {
                     "light": {
-                        "COLOR_BG1": "#FFFFFF",
+                        "COLOR_BG1": "#F8F9FA",
                         "COLOR_BG2": "#FAFAFA",
-                        "COLOR_BG3": "#F3F3F3",
+                        "COLOR_BG3": "#FFFFFF",
 
                         "COLOR_UI1": "#ABB0B6",
                         "COLOR_UI2": "#5C6773",
@@ -24,7 +46,7 @@
                         "COLOR_TEXT3": "#F29718",
                         "COLOR_TEXT4": "#36A3D9",
                         "COLOR_TEXT5": "#E6B673",
-                        "COLOR_PLUS": ["#D9D8D7"]
+                        "COLOR_PLUS": ["#2D3640"]
                     },
                     "dark": {
                         "COLOR_BG1": "#0F1419",
@@ -42,7 +64,7 @@
                         "COLOR_TEXT3": "#FFB454",
                         "COLOR_TEXT4": "#E6B673",
                         "COLOR_TEXT5": "#36A3D9",
-                        "COLOR_PLUS": ["#2D3640"]
+                        "COLOR_PLUS": ["#D9D8D7"]
                     }
                 }
             },
@@ -52,19 +74,42 @@
                     "dark": {
                         "COLOR_BG1": "#272D38",
                         "COLOR_BG2": "#242B38",
-                        "COLOR_BG3": "#D9D7CE",
+                        "COLOR_BG3": "#0A0000",
 
-                        "COLOR_UI1": "#3D4751",
+                        "COLOR_UI1": "#3BBBF4",
                         "COLOR_UI2": "#FFCC66",
-                        "COLOR_WARN1": "#FFAE57",
-                        "COLOR_WARN2": "#5C6773",
+                        "COLOR_WARN1": "#F06B5C",
+                        "COLOR_WARN2": "#FFAE57",
                         "COLOR_WARN3": "#FFC44C",
                         "COLOR_GOOD1": "#BBE67E",
                         "COLOR_TEXT1": "#FFD57F",
-                        "COLOR_TEXT2": "#E0E2EA",
+                        "COLOR_TEXT2": "#5CCFE6",
                         "COLOR_TEXT3": "#80D4FF",
                         "COLOR_TEXT4": "#D4BFFF",
-                        "COLOR_TEXT5": "#5CCFE6",
+                        "COLOR_TEXT5": "#E0E2EA",
+                        "COLOR_PLUS": [ "#D9D7CE"]
+                    }
+                }
+            },
+            {
+                "name": "carbonfox",
+                "data": {
+                    "dark": {
+                        "COLOR_BG1": "#0C0C0C",
+                        "COLOR_BG2": "#161616",
+                        "COLOR_BG3": "#0C0C0C",
+
+                        "COLOR_UI1": "#3DDBD9",
+                        "COLOR_UI2": "#7B7C7E",
+                        "COLOR_WARN1": "#6E6F70",
+                        "COLOR_WARN2": "#8CB6FF",
+                        "COLOR_WARN3": "#B6B8BB",
+                        "COLOR_GOOD1": "#25BE6A",
+                        "COLOR_TEXT1": "#F2F4F8",
+                        "COLOR_TEXT2": "#33B1FF",
+                        "COLOR_TEXT3": "#BE95FF",
+                        "COLOR_TEXT4": "#F2F4F8",
+                        "COLOR_TEXT5": "#F2F4F8",
                         "COLOR_PLUS": []
                     }
                 }
@@ -77,17 +122,17 @@
                         "COLOR_BG2": "#303446",
                         "COLOR_BG3": "#3B3F52",
 
-                        "COLOR_UI1": "#51576D",
-                        "COLOR_UI2": "#C6D0F5",
-                        "COLOR_WARN1": "#EF9F76",
+                        "COLOR_UI1": "#85C1DC",
+                        "COLOR_UI2": "#EF9F76",
+                        "COLOR_WARN1": "#E78284",
                         "COLOR_WARN2": "#EEBEBE",
-                        "COLOR_WARN3": "#99D1DB",
+                        "COLOR_WARN3": "#E5C890",
                         "COLOR_GOOD1": "#A6D189",
-                        "COLOR_TEXT1": "#F4B8E4",
-                        "COLOR_TEXT2": "#BABBF1",
+                        "COLOR_TEXT1": "#C6D0F5",
+                        "COLOR_TEXT2": "#F4B8E4",
                         "COLOR_TEXT3": "#CA9EE6",
                         "COLOR_TEXT4": "#8CAAEE",
-                        "COLOR_TEXT5": "#949CBB",
+                        "COLOR_TEXT5": "#BABBF1",
                         "COLOR_PLUS": []
                     }
                 }
@@ -123,7 +168,7 @@
                         "COLOR_BG2": "#E9EBF1",
                         "COLOR_BG3": "#E6E9EF",
 
-                        "COLOR_UI1": "#BCC0CC",
+                        "COLOR_UI1": "#4C4F69",
                         "COLOR_UI2": "#8839EF",
                         "COLOR_WARN1": "#FE640B",
                         "COLOR_WARN2": "#DD7878",
@@ -146,7 +191,7 @@
                         "COLOR_BG2": "#24273A",
                         "COLOR_BG3": "#303347",
 
-                        "COLOR_UI1": "#494D64",
+                        "COLOR_UI1": "#7DC4E4",
                         "COLOR_UI2": "#91D7E3",
                         "COLOR_WARN1": "#F5A97F",
                         "COLOR_WARN2": "#F0C6C6",
@@ -185,47 +230,109 @@
                 }
             },
             {
+                "name": "challenger_deep",
+                "data": {
+                    "dark": {
+                        "COLOR_BG1": "#100E23",
+                        "COLOR_BG2": "#1E1C31",
+                        "COLOR_BG3": "#100E23",
+                        "COLOR_UI1": "#63F2F1",
+                        "COLOR_UI2": "#C991E1",
+                        "COLOR_WARN1": "#FF8080",
+                        "COLOR_WARN2": "#CBE3E7",
+                        "COLOR_WARN3": "#FFE9AA",
+                        "COLOR_GOOD1": "#767676",
+                        "COLOR_TEXT1": "#AAFFE4",
+                        "COLOR_TEXT2": "#FFB378",
+                        "COLOR_TEXT3": "#91DDFF",
+                        "COLOR_TEXT4": "#AAFFE4",
+                        "COLOR_TEXT5": "#AAFFE4",
+                        "COLOR_PLUS": []
+                    }
+                }
+            },
+            {
                 "name": "dawnfox",
                 "data": {
                     "light": {
-                        "COLOR_BG1": "#FAF4ED",
-                        "COLOR_BG2": "#EBE5DF",
-                        "COLOR_BG3": "#EBDFE4",
+                        "COLOR_BG1": "#EBE5DF",
+                        "COLOR_BG2": "#FAF4ED",
+                        "COLOR_BG3": "#575279",
 
                         "COLOR_UI1": "#A8A3B3",
-                        "COLOR_UI2": "#295E73",
-                        "COLOR_WARN1": "#D7827E",
+                        "COLOR_UI2": "#625C87",
+                        "COLOR_WARN1": "#907AA9",
                         "COLOR_WARN2": "#EA9D34",
-                        "COLOR_WARN3": "#56949F",
+                        "COLOR_WARN3": "#295E73",
                         "COLOR_GOOD1": "#618774",
                         "COLOR_TEXT1": "#575279",
-                        "COLOR_TEXT2": "#625C87",
-                        "COLOR_TEXT3": "#907AA9",
-                        "COLOR_TEXT4": "#9893A5",
+                        "COLOR_TEXT2": "#56949F",
+                        "COLOR_TEXT3": "#9893A5",
+                        "COLOR_TEXT4": "#D7827E",
                         "COLOR_TEXT5": "#575279",
                         "COLOR_PLUS": []
                     }
                 }
             },
             {
-                "name": "dayfox",
+                "name": "dracula",
                 "data": {
                     "light": {
-                        "COLOR_BG1": "#F6F2EE",
-                        "COLOR_BG2": "#E4DCD4",
-                        "COLOR_BG3": "#D3C7BB",
+                        "COLOR_BG1": "#F8F8F2",
+                        "COLOR_BG2": "#FFFFFD",
+                        "COLOR_BG3": "#282A36",
 
-                        "COLOR_UI1": "#287980",
-                        "COLOR_UI2": "#223D90",
-                        "COLOR_WARN1": "#AC5402",
-                        "COLOR_WARN2": "#955F61",
-                        "COLOR_WARN3": "#837A72",
-                        "COLOR_GOOD1": "#396847",
-                        "COLOR_TEXT1": "#3D2B5A",
-                        "COLOR_TEXT2": "#643F61",
-                        "COLOR_TEXT3": "#6E33CE",
-                        "COLOR_TEXT4": "#824D5B",
-                        "COLOR_TEXT5": "#3D2B5A",
+                        "COLOR_UI1": "#B2C2F4",
+                        "COLOR_UI2": "#52535C",
+                        "COLOR_WARN1": "#CF4996",
+                        "COLOR_WARN2": "#FFB86C",
+                        "COLOR_WARN3": "#3B89DD",
+                        "COLOR_GOOD1": "#91890A",
+                        "COLOR_TEXT1": "#282A36",
+                        "COLOR_TEXT2": "#8D63D9",
+                        "COLOR_TEXT3": "#20BA4B",
+                        "COLOR_TEXT4": "#282A36",
+                        "COLOR_TEXT5": "#282A36",
+                        "COLOR_PLUS": []
+                    },
+                    "dark": {
+                        "COLOR_BG1": "#21222C",
+                        "COLOR_BG2": "#282A36",
+                        "COLOR_BG3": "#F8F8F2",
+
+                        "COLOR_UI1": "#4D5062",
+                        "COLOR_UI2": "#BD93F9",
+                        "COLOR_WARN1": "#FF79C6",
+                        "COLOR_WARN2": "#FFB86C",
+                        "COLOR_WARN3": "#F1FA8C",
+                        "COLOR_GOOD1": "#50FA7B",
+                        "COLOR_TEXT1": "#F8F8F2",
+                        "COLOR_TEXT2": "#CECFCC",
+                        "COLOR_TEXT3": "#8BE9FD",
+                        "COLOR_TEXT4": "#F8F8F2",
+                        "COLOR_TEXT5": "#F8F8F2",
+                        "COLOR_PLUS": []
+                    }
+                }
+            },
+            {
+                "name": "duskfox",
+                "data": {
+                    "dark": {
+                        "COLOR_BG1": "#191726",
+                        "COLOR_BG2": "#232136",
+                        "COLOR_BG3": "#191726",
+                        "COLOR_UI1": "#817C9C",
+                        "COLOR_UI2": "#65B1CD",
+                        "COLOR_WARN1": "#EA9A97",
+                        "COLOR_WARN2": "#6E6A86",
+                        "COLOR_WARN3": "#F6C177",
+                        "COLOR_GOOD1": "#A3BE8C",
+                        "COLOR_TEXT1": "#E0DEF4",
+                        "COLOR_TEXT2": "#C4A7E7",
+                        "COLOR_TEXT3": "#9CCFD8",
+                        "COLOR_TEXT4": "#CDCBE0",
+                        "COLOR_TEXT5": "#E0DEF4",
                         "COLOR_PLUS": []
                     }
                 }
@@ -249,6 +356,92 @@
                         "COLOR_TEXT3": "#C4A7E7",
                         "COLOR_TEXT4": "#65B1CD",
                         "COLOR_TEXT5": "#E0DEF4",
+                        "COLOR_PLUS": []
+                    }
+                }
+            },
+            {
+                "name": "embark",
+                "data": {
+                    "dark": {
+                        "COLOR_BG1": "#100E23",
+                        "COLOR_BG2": "#1E1C31",
+                        "COLOR_BG3": "#91DDFF",
+
+                        "COLOR_UI1": "#585273",
+                        "COLOR_UI2": "#8A889D",
+                        "COLOR_WARN1": "#F2B482",
+                        "COLOR_WARN2": "#E0E2EA",
+                        "COLOR_WARN3": "#FFE6B3",
+                        "COLOR_GOOD1": "#A1EFD3",
+                        "COLOR_TEXT1": "#ABF8F7",
+                        "COLOR_TEXT2": "#F48FB1",
+                        "COLOR_TEXT3": "#63F2F1",
+                        "COLOR_TEXT4": "#CBE3E7",
+                        "COLOR_TEXT5": "#ABF8F7",
+                        "COLOR_PLUS": []
+                    }
+                }
+            },
+            {
+                "name": "everforest",
+                "data": {
+                    "light": {
+                        "COLOR_BG1": "#F4F0D9",
+                        "COLOR_BG2": "#FDF6E3",
+                        "COLOR_BG3": "#5C6A72",
+
+                        "COLOR_UI1": "#BDC3AF",
+                        "COLOR_UI2": "#3A94C5",
+                        "COLOR_WARN1": "#F85552",
+                        "COLOR_WARN2": "#F57D26",
+                        "COLOR_WARN3": "#DFA000",
+                        "COLOR_GOOD1": "#8DA101",
+                        "COLOR_TEXT1": "#5C6A72",
+                        "COLOR_TEXT2": "#DF69BA",
+                        "COLOR_TEXT3": "#939F91",
+                        "COLOR_TEXT4": "#5C6A72",
+                        "COLOR_TEXT5": "#5C6A72",
+                        "COLOR_PLUS": []
+                    },
+                    "dark": {
+                        "COLOR_BG1": "#2D353B",
+                        "COLOR_BG2": "#343F44",
+                        "COLOR_BG3": "#D3C6AA",
+
+                        "COLOR_UI1": "#56635F",
+                        "COLOR_UI2": "#E67E80",
+                        "COLOR_WARN1": "#E69875",
+                        "COLOR_WARN2": "#DBBC7F",
+                        "COLOR_WARN3": "#A7C080",
+                        "COLOR_GOOD1": "#859289",
+                        "COLOR_TEXT1": "#D3C6AA",
+                        "COLOR_TEXT2": "#D699B6",
+                        "COLOR_TEXT3": "#7FBBB3",
+                        "COLOR_TEXT4": "#D3C6AA",
+                        "COLOR_TEXT5": "#D3C6AA",
+                        "COLOR_PLUS": []
+                    }
+                }
+            },
+            {
+                "name": "evergarden",
+                "data": {
+                    "dark": {
+                        "COLOR_BG1": "#1C2225",
+                        "COLOR_BG2": "#232A2E",
+                        "COLOR_BG3": "#CBE3B3",
+                        "COLOR_UI1": "#4A585C",
+                        "COLOR_UI2": "#839E9A",
+                        "COLOR_WARN1": "#F57F82",
+                        "COLOR_WARN2": "#DBE6AF",
+                        "COLOR_WARN3": "#96B4AA",
+                        "COLOR_GOOD1": "#6F8788",
+                        "COLOR_TEXT1": "#F8F9E8",
+                        "COLOR_TEXT2": "#F3C0E5",
+                        "COLOR_TEXT3": "#B3E3CA",
+                        "COLOR_TEXT4": "#CBE3B3",
+                        "COLOR_TEXT5": "#F8F9E8",
                         "COLOR_PLUS": []
                     }
                 }
@@ -302,7 +495,7 @@
                         "COLOR_BG2": "#F4E8BE",
                         "COLOR_BG3": "#F2E5BC",
 
-                        "COLOR_UI1": "#DDCCAB",
+                        "COLOR_UI1": "#45707A",
                         "COLOR_UI2": "#654735",
                         "COLOR_WARN1": "#C14A4A",
                         "COLOR_WARN2": "#C35E0A",
@@ -310,10 +503,33 @@
                         "COLOR_GOOD1": "#6C782E",
                         "COLOR_TEXT1": "#4F3829",
                         "COLOR_TEXT2": "#945E80",
-                        "COLOR_TEXT3": "#45707A",
+                        "COLOR_TEXT3": "#7C6F64",
                         "COLOR_TEXT4": "#4C7A5D",
-                        "COLOR_TEXT5": "#928374",
-                        "COLOR_PLUS": []
+                        "COLOR_TEXT5": "#AE5858",
+                        "COLOR_PLUS": ["#A96B2C", "#928374", "#6F8352"]
+                    }
+                }
+            },
+            {
+                "name": "iamb",
+                "data": {
+                    "dark": {
+                        "COLOR_BG1": "#201127",
+                        "COLOR_BG2": "#201433",
+                        "COLOR_BG3": "#1B1E34",
+
+                        "COLOR_UI1": "#F5C9B1",
+                        "COLOR_UI2": "#B1DDF5",
+                        "COLOR_WARN1": "#A73169",
+                        "COLOR_WARN2": "#C24B6E",
+                        "COLOR_WARN3": "#FFEB99",
+                        "COLOR_GOOD1": "#6AAF9D",
+                        "COLOR_TEXT1": "#E8E7E9",
+                        "COLOR_TEXT2": "#EC9A6D",
+                        "COLOR_TEXT3": "#D9626B",
+                        "COLOR_TEXT4": "#94C5AC",
+                        "COLOR_TEXT5": "#D0CFD1",
+                        "COLOR_PLUS": ["#355D68", "#FFC27A"]
                     }
                 }
             },
@@ -323,36 +539,34 @@
                     "dark": {
                         "COLOR_BG1": "#17171B",
                         "COLOR_BG2": "#161821",
-                        "COLOR_BG3": "#1E2132",
-
+                        "COLOR_BG3": "#C6C8D1",
                         "COLOR_UI1": "#444B71",
-                        "COLOR_UI2": "#C6C8D1",
+                        "COLOR_UI2": "#818596",
                         "COLOR_WARN1": "#E2A478",
-                        "COLOR_WARN2": "#818596",
+                        "COLOR_WARN2": "#6B7089",
                         "COLOR_WARN3": "#89B8C2",
                         "COLOR_GOOD1": "#B4BE82",
                         "COLOR_TEXT1": "#CDD1E6",
-                        "COLOR_TEXT2": "#84A0C6",
-                        "COLOR_TEXT3": "#A093C7",
-                        "COLOR_TEXT4": "#6B7089",
+                        "COLOR_TEXT2": "#A093C7",
+                        "COLOR_TEXT3": "#84A0C6",
+                        "COLOR_TEXT4": "#C6C8D1",
                         "COLOR_TEXT5": "#CDD1E6",
                         "COLOR_PLUS": []
                     },
                     "light": {
-                        "COLOR_BG1": "#E8E9EC",
-                        "COLOR_BG2": "#DCDFE7",
-                        "COLOR_BG3": "#CAD0DE",
-
-                        "COLOR_UI1": "#757CA3",
+                        "COLOR_BG1": "#DCDFE7",
+                        "COLOR_BG2": "#E8E9EC",
+                        "COLOR_BG3": "#33374C",
+                        "COLOR_UI1": "#9FA7BD",
                         "COLOR_UI2": "#2D539E",
-                        "COLOR_WARN1": "#C57339",
+                        "COLOR_WARN1": "#7759B4",
                         "COLOR_WARN2": "#8389A3",
-                        "COLOR_WARN3": "#9FA7BD",
-                        "COLOR_GOOD1": "#668E3D",
+                        "COLOR_WARN3": "#3F83A6",
+                        "COLOR_GOOD1": "#757CA3",
                         "COLOR_TEXT1": "#33374C",
-                        "COLOR_TEXT2": "#7759B4",
-                        "COLOR_TEXT3": "#576A9E",
-                        "COLOR_TEXT4": "#3F83A6",
+                        "COLOR_TEXT2": "#576A9E",
+                        "COLOR_TEXT3": "#668E3D",
+                        "COLOR_TEXT4": "#C57339",
                         "COLOR_TEXT5": "#33374C",
                         "COLOR_PLUS": []
                     }
@@ -384,18 +598,18 @@
                         "COLOR_BG2": "#EBE7DF",
                         "COLOR_BG3": "#47463F",
 
-                        "COLOR_UI1": "#475B68",
+                        "COLOR_UI1": "#8FBFDC",
                         "COLOR_UI2": "#222120",
                         "COLOR_WARN1": "#8C594A",
                         "COLOR_WARN2": "#787775",
                         "COLOR_WARN3": "#A28853",
                         "COLOR_GOOD1": "#6D7F59",
                         "COLOR_TEXT1": "#0F0E0D",
-                        "COLOR_TEXT2": "#2D2C2A",
+                        "COLOR_TEXT2": "#655683",
                         "COLOR_TEXT3": "#334A84",
                         "COLOR_TEXT4": "#3C5971",
-                        "COLOR_TEXT5": "#655683",
-                        "COLOR_PLUS": ["#5C5650"]
+                        "COLOR_TEXT5": "#2D2C2A",
+                        "COLOR_PLUS": ["#475B68", "#5C5650"]
 		    }
                 }
             },
@@ -437,6 +651,70 @@
                         "COLOR_TEXT4": "#6693BF",
                         "COLOR_TEXT5": "#4E8CA2",
                         "COLOR_PLUS": ["#8A8980", "#A09CAC"]
+                    }
+                }
+            },
+            {
+                "name": "kanagawa-dragon",
+                "data": {
+                    "dark": {
+                        "COLOR_BG1": "#0D0C0C",
+                        "COLOR_BG2": "#181616",
+                        "COLOR_BG3": "#0D0C0C",
+                        "COLOR_UI1": "#C8C093",
+                        "COLOR_UI2": "#737C73",
+                        "COLOR_WARN1": "#C4746E",
+                        "COLOR_WARN2": "#625E5A",
+                        "COLOR_WARN3": "#C4B28A",
+                        "COLOR_GOOD1": "#8A9A7B",
+                        "COLOR_TEXT1": "#C5C9C5",
+                        "COLOR_TEXT2": "#8992A7",
+                        "COLOR_TEXT3": "#A292A3",
+                        "COLOR_TEXT4": "#9E9B93",
+                        "COLOR_TEXT5": "#949FB5",
+                        "COLOR_PLUS": [
+                            "#8BA4B0",
+                            "#FF9E3B"
+                        ]
+                    }
+                }
+            },
+            {
+                "name": "kanagawa-paper",
+                "data": {
+                    "light": {
+                        "COLOR_BG1": "#D8D8D2",
+                        "COLOR_BG2": "#E1E1DE",
+                        "COLOR_BG3": "#73787D",
+                        "COLOR_UI1": "#AEAEA6",
+                        "COLOR_UI2": "#7880A5",
+                        "COLOR_WARN1": "#C27672",
+                        "COLOR_WARN2": "#B28D77",
+                        "COLOR_WARN3": "#8E8A80",
+                        "COLOR_GOOD1": "#7E9579",
+                        "COLOR_TEXT1": "#73787D",
+                        "COLOR_TEXT2": "#9E7E98",
+                        "COLOR_TEXT3": "#7E8FAF",
+                        "COLOR_TEXT4": "#7B958E",
+                        "COLOR_TEXT5": "#73787D",
+                        "COLOR_PLUS": []
+                    },
+                    "dark": {
+                        "COLOR_BG1": "#1F1F28",
+                        "COLOR_BG2": "#2A2A37",
+                        "COLOR_BG3": "#DCD7BA",
+                        "COLOR_UI1": "#54546D",
+                        "COLOR_UI2": "#C4746E",
+                        "COLOR_WARN1": "#727169",
+                        "COLOR_WARN2": "#859FAC",
+                        "COLOR_WARN3": "#9E9B93",
+                        "COLOR_GOOD1": "#8A9A7B",
+                        "COLOR_TEXT1": "#C4B28A",
+                        "COLOR_TEXT2": "#8992A7",
+                        "COLOR_TEXT3": "#A292A3",
+                        "COLOR_TEXT4": "#C4B28A",
+                        "COLOR_TEXT5": "#C4B28A",
+                        "COLOR_PLUS": []
                     }
                 }
             },
@@ -515,18 +793,18 @@
                     "dark": {
                         "COLOR_BG1": "#131A24",
                         "COLOR_BG2": "#192330",
-                        "COLOR_BG3": "#29394F",
+                        "COLOR_BG3": "#131A24",
 
-                        "COLOR_UI1": "#738091",
-                        "COLOR_UI2": "#63CDCF",
+                        "COLOR_UI1": "#63CDCF",
+                        "COLOR_UI2": "#71839B",
                         "COLOR_WARN1": "#F4A261",
-                        "COLOR_WARN2": "#AEAFB0",
+                        "COLOR_WARN2": "#738091",
                         "COLOR_WARN3": "#DBC074",
                         "COLOR_GOOD1": "#81B29A",
                         "COLOR_TEXT1": "#CDCECF",
-                        "COLOR_TEXT2": "#86ABDC",
-                        "COLOR_TEXT3": "#9D79D6",
-                        "COLOR_TEXT4": "#71839B",
+                        "COLOR_TEXT2": "#9D79D6",
+                        "COLOR_TEXT3": "#86ABDC",
+                        "COLOR_TEXT4": "#AEAFB0",
                         "COLOR_TEXT5": "#CDCECF",
                         "COLOR_PLUS": []
                     }
@@ -538,19 +816,18 @@
                     "dark": {
                         "COLOR_BG1": "#232831",
                         "COLOR_BG2": "#2E3440",
-                        "COLOR_BG3": "#444C5E",
-
-                        "COLOR_UI1": "#60728A",
-                        "COLOR_UI2": "#88C0D0",
-                        "COLOR_WARN1": "#C9826B",
-                        "COLOR_WARN2": "#7E8188",
-                        "COLOR_WARN3": "#EBCB8B",
+                        "COLOR_BG3": "#232831",
+                        "COLOR_UI1": "#88C0D0",
+                        "COLOR_UI2": "#C9826B",
+                        "COLOR_WARN1": "#7E8188",
+                        "COLOR_WARN2": "#60728A",
+                        "COLOR_WARN3": "#CDCECF",
                         "COLOR_GOOD1": "#A3BE8C",
-                        "COLOR_TEXT1": "#CDCECF",
-                        "COLOR_TEXT2": "#ABB1BB",
-                        "COLOR_TEXT3": "#8CAFD2",
-                        "COLOR_TEXT4": "#B48EAD",
-                        "COLOR_TEXT5": "#CDCECF",
+                        "COLOR_TEXT1": "#EBCB8B",
+                        "COLOR_TEXT2": "#8CAFD2",
+                        "COLOR_TEXT3": "#B48EAD",
+                        "COLOR_TEXT4": "#ABB1BB",
+                        "COLOR_TEXT5": "#EBCB8B",
                         "COLOR_PLUS": []
                     }
                 }
@@ -602,16 +879,15 @@
                     "dark": {
                         "COLOR_BG1": "#1A1825",
                         "COLOR_BG2": "#222030",
-                        "COLOR_BG3": "#312E43",
-
+                        "COLOR_BG3": "#E7DDDD",
                         "COLOR_UI1": "#625D7F",
-                        "COLOR_UI2": "#9CCFD8",
-                        "COLOR_WARN1": "#BC9493",
-                        "COLOR_WARN2": "#CAB0AF",
+                        "COLOR_UI2": "#BC9493",
+                        "COLOR_WARN1": "#CAB0AF",
+                        "COLOR_WARN2": "#317490",
                         "COLOR_WARN3": "#E1D4D4",
                         "COLOR_GOOD1": "#69657E",
                         "COLOR_TEXT1": "#E0E2EA",
-                        "COLOR_TEXT2": "#317490",
+                        "COLOR_TEXT2": "#9CCFD8",
                         "COLOR_TEXT3": "#7D7997",
                         "COLOR_TEXT4": "#E0E2EA",
                         "COLOR_TEXT5": "#E0E2EA",
@@ -620,19 +896,85 @@
                     "light": {
                         "COLOR_BG1": "#F7ECE0",
                         "COLOR_BG2": "#FBF6F0",
-                        "COLOR_BG3": "#ECD0A9",
+                        "COLOR_BG3": "#724341",
 
                         "COLOR_UI1": "#B69A6E",
-                        "COLOR_UI2": "#724341",
+                        "COLOR_UI2": "#935855",
                         "COLOR_WARN1": "#AB6763",
-                        "COLOR_WARN2": "#935855",
-                        "COLOR_WARN3": "#A18E72",
+                        "COLOR_WARN2": "#A18E72",
+                        "COLOR_WARN3": "#724341",
                         "COLOR_GOOD1": "#9B835D",
                         "COLOR_TEXT1": "#14161B",
                         "COLOR_TEXT2": "#286A84",
                         "COLOR_TEXT3": "#5795A0",
                         "COLOR_TEXT4": "#14161B",
                         "COLOR_TEXT5": "#14161B",
+                        "COLOR_PLUS": []
+                    }
+                }
+            },
+            {
+                "name": "rose-pine",
+                "data": {
+                    "dark": {
+                        "COLOR_BG1": "#191724",
+                        "COLOR_BG2": "#1F1D2E",
+                        "COLOR_BG3": "#E0DEF4",
+                        "COLOR_UI1": "#524F67",
+                        "COLOR_UI2": "#908CAA",
+                        "COLOR_WARN1": "#EB6F92",
+                        "COLOR_WARN2": "#31748F",
+                        "COLOR_WARN3": "#F6C177",
+                        "COLOR_GOOD1": "#6E6A86",
+                        "COLOR_TEXT1": "#E0DEF4",
+                        "COLOR_TEXT2": "#C4A7E7",
+                        "COLOR_TEXT3": "#9CCFD8",
+                        "COLOR_TEXT4": "#E0DEF4",
+                        "COLOR_TEXT5": "#E0DEF4",
+                        "COLOR_PLUS": []
+                    }
+                }
+            },
+            {
+                "name": "rose-pine-dawn",
+                "data": {
+                    "light": {
+                        "COLOR_BG1": "#FAF4ED",
+                        "COLOR_BG2": "#FFFAF3",
+                        "COLOR_BG3": "#575279",
+                        "COLOR_UI1": "#CECACD",
+                        "COLOR_UI2": "#286983",
+                        "COLOR_WARN1": "#B4637A",
+                        "COLOR_WARN2": "#EA9D34",
+                        "COLOR_WARN3": "#797593",
+                        "COLOR_GOOD1": "#56949F",
+                        "COLOR_TEXT1": "#575279",
+                        "COLOR_TEXT2": "#907AA9",
+                        "COLOR_TEXT3": "#9893A5",
+                        "COLOR_TEXT4": "#575279",
+                        "COLOR_TEXT5": "#575279",
+                        "COLOR_PLUS": []
+                    }
+                }
+            },
+            {
+                "name": "rose-pine-moon",
+                "data": {
+                    "dark": {
+                        "COLOR_BG1": "#232136",
+                        "COLOR_BG2": "#2A273F",
+                        "COLOR_BG3": "#E0DEF4",
+                        "COLOR_UI1": "#56526E",
+                        "COLOR_UI2": "#908CAA",
+                        "COLOR_WARN1": "#EB6F92",
+                        "COLOR_WARN2": "#3E8FB0",
+                        "COLOR_WARN3": "#F6C177",
+                        "COLOR_GOOD1": "#6E6A86",
+                        "COLOR_TEXT1": "#E0DEF4",
+                        "COLOR_TEXT2": "#C4A7E7",
+                        "COLOR_TEXT3": "#9CCFD8",
+                        "COLOR_TEXT4": "#E0DEF4",
+                        "COLOR_TEXT5": "#E0DEF4",
                         "COLOR_PLUS": []
                     }
                 }
@@ -659,21 +1001,20 @@
                         "COLOR_PLUS": ["#98BCBD", "#BE9873"]
                     },
                     "light": {
-                        "COLOR_BG1": "#E1E1E1",
-                        "COLOR_BG2": "#D9D9D9",
-                        "COLOR_BG3": "#D1D0D1",
-
-                        "COLOR_UI1": "#999872",
-                        "COLOR_UI2": "#009799",
+                        "COLOR_BG1": "#D9D9D9",
+                        "COLOR_BG2": "#E1E1E1",
+                        "COLOR_BG3": "#E1E1E1",
+                        "COLOR_UI1": "#719899",
+                        "COLOR_UI2": "#727100",
                         "COLOR_WARN1": "#BE7572",
-                        "COLOR_WARN2": "#9A7372",
-                        "COLOR_WARN3": "#9A7200",
-                        "COLOR_GOOD1": "#727100",
+                        "COLOR_WARN2": "#E19972",
+                        "COLOR_WARN3": "#999872",
+                        "COLOR_GOOD1": "#9A7200",
                         "COLOR_TEXT1": "#616161",
-                        "COLOR_TEXT2": "#9A7599",
-                        "COLOR_TEXT3": "#719872",
-                        "COLOR_TEXT4": "#E19972",
-                        "COLOR_TEXT5": "#719899",
+                        "COLOR_TEXT2": "#9A7372",
+                        "COLOR_TEXT3": "#9A7599",
+                        "COLOR_TEXT4": "#009799",
+                        "COLOR_TEXT5": "#719872",
                         "COLOR_PLUS": []
                     }
                 }
@@ -683,38 +1024,60 @@
                 "data": {
                     "dark": {
                         "COLOR_BG1": "#002B36",
-                        "COLOR_BG2": "#073642",
-                        "COLOR_BG3": "#586E75",
+                        "COLOR_BG2": "#002B36",
+                        "COLOR_BG3": "#073642",
 
                         "COLOR_UI1": "#657B83",
-                        "COLOR_UI2": "#93A1A1",
+                        "COLOR_UI2": "#EEE8D5",
                         "COLOR_WARN1": "#DC322F",
                         "COLOR_WARN2": "#CB4B16",
                         "COLOR_WARN3": "#B58900",
                         "COLOR_GOOD1": "#859900",
-                        "COLOR_TEXT1": "#839496",
+                        "COLOR_TEXT1": "#FDF6E3",
                         "COLOR_TEXT2": "#2AA198",
                         "COLOR_TEXT3": "#268BD2",
                         "COLOR_TEXT4": "#6C71C4",
-                        "COLOR_TEXT5": "#EEE8D5",
-                        "COLOR_PLUS": ["#D33682", "#FDF6E3"]
+                        "COLOR_TEXT5": "#93A1A1",
+                        "COLOR_PLUS": ["#839496","#D33682"]
                     },
                     "light": {
                         "COLOR_BG1": "#FDF6E3",
-                        "COLOR_BG2": "#EEE8D5",
-                        "COLOR_BG3": "#93A1A1",
+                        "COLOR_BG2": "#FDF6E3",
+                        "COLOR_BG3": "#EEE8D5",
 
-                        "COLOR_UI1": "#2AA198",
-                        "COLOR_UI2": "#6C71C4",
+                        "COLOR_UI1": "#073642",
+                        "COLOR_UI2": "#073642",
                         "COLOR_WARN1": "#DC322F",
                         "COLOR_WARN2": "#CB4B16",
-                        "COLOR_WARN3": "#839496",
+                        "COLOR_WARN3": "#B58900",
                         "COLOR_GOOD1": "#859900",
-                        "COLOR_TEXT1": "#D33682",
-                        "COLOR_TEXT2": "#268BD2",
+                        "COLOR_TEXT1": "#002B36",
+                        "COLOR_TEXT2": "#D33682",
                         "COLOR_TEXT3": "#586E75",
-                        "COLOR_TEXT4": "#657B83",
-                        "COLOR_TEXT5": "#D33682",
+                        "COLOR_TEXT4": "#6C71C4",
+                        "COLOR_TEXT5": "#268BD2",
+                        "COLOR_PLUS": []
+                    }
+                }
+            },
+            {
+                "name": "srcery",
+                "data": {
+                    "dark": {
+                        "COLOR_BG1": "#121110",
+                        "COLOR_BG2": "#1C1B19",
+                        "COLOR_BG3": "#121110",
+                        "COLOR_UI1": "#2C78BF",
+                        "COLOR_UI2": "#EF2F27",
+                        "COLOR_WARN1": "#FF5C8F",
+                        "COLOR_WARN2": "#FBB829",
+                        "COLOR_WARN3": "#917E6B",
+                        "COLOR_GOOD1": "#98BC37",
+                        "COLOR_TEXT1": "#FCE8C3",
+                        "COLOR_TEXT2": "#68A8E4",
+                        "COLOR_TEXT3": "#C5B088",
+                        "COLOR_TEXT4": "#FCE8C3",
+                        "COLOR_TEXT5": "#FCE8C3",
                         "COLOR_PLUS": []
                     }
                 }
@@ -791,7 +1154,7 @@
                         "COLOR_BG2": "#24283B",
                         "COLOR_BG3": "#292E42",
 
-                        "COLOR_UI1": "#3B4261",
+                        "COLOR_UI1": "#636DA6",
                         "COLOR_UI2": "#C0CAF5",
                         "COLOR_WARN1": "#FF8349",
                         "COLOR_WARN2": "#737AA2",
@@ -819,7 +1182,7 @@
                         "COLOR_TEXT3": "#9854F1",
                         "COLOR_TEXT4": "#2E7DE9",
                         "COLOR_TEXT5": "#6172B0",
-                        "COLOR_PLUS": ["#A8AECB"]
+                        "COLOR_PLUS": []
                     }
                 }
             },
@@ -835,7 +1198,7 @@
                         "COLOR_UI2": "#C8D3F5",
                         "COLOR_WARN1": "#FF966C",
                         "COLOR_WARN2": "#828BB8",
-                        "COLOR_WARN3": "#3B4261",
+                        "COLOR_WARN3": "#2AC3DE",
                         "COLOR_GOOD1": "#C3E88D",
                         "COLOR_TEXT1": "#89DDFF",
                         "COLOR_TEXT2": "#65BCFF",
@@ -854,7 +1217,7 @@
                         "COLOR_BG2": "#1A1B26",
                         "COLOR_BG3": "#292E42",
 
-                        "COLOR_UI1": "#3B4261",
+                        "COLOR_UI1": "#636DA6",
                         "COLOR_UI2": "#C0CAF5",
                         "COLOR_WARN1": "#FF9E64",
                         "COLOR_WARN2": "#565F89",
@@ -877,7 +1240,7 @@
                         "COLOR_BG2": "#24283B",
                         "COLOR_BG3": "#292E42",
 
-                        "COLOR_UI1": "#3B4261",
+                        "COLOR_UI1": "#636DA6",
                         "COLOR_UI2": "#C0CAF5",
                         "COLOR_WARN1": "#FF9E64",
                         "COLOR_WARN2": "#565F89",
@@ -896,22 +1259,23 @@
                 "name": "zenburn",
                 "data": {
                     "dark": {
-                        "COLOR_BG1": "#383838",
+                        "COLOR_BG1": "#262626",
                         "COLOR_BG2": "#3F3F3F",
-                        "COLOR_BG3": "#606060",
-
-                        "COLOR_UI1": "#000000",
-                        "COLOR_UI2": "#93E0E3",
-                        "COLOR_WARN1": "#DC8CC3",
-                        "COLOR_WARN2": "#DCA3A3",
-                        "COLOR_WARN3": "#F0DFAF",
-                        "COLOR_GOOD1": "#AFD8AF",
-                        "COLOR_TEXT1": "#DCDCCC",
-                        "COLOR_TEXT2": "#CC9393",
-                        "COLOR_TEXT3": "#7CB8BB",
-                        "COLOR_TEXT4": "#5F7F5F",
-                        "COLOR_TEXT5": "#DFAF8F",
-                        "COLOR_PLUS": []
+                        "COLOR_BG3": "#262626",
+                        "COLOR_UI1": "#EFEF8F",
+                        "COLOR_UI2": "#8F8F8F",
+                        "COLOR_WARN1": "#CC9393",
+                        "COLOR_WARN2": "#EFDCBC",
+                        "COLOR_WARN3": "#D2D39B",
+                        "COLOR_GOOD1": "#7F9F7F",
+                        "COLOR_TEXT1": "#F0EFD0",
+                        "COLOR_TEXT2": "#9FAFAF",
+                        "COLOR_TEXT3": "#CFBFAF",
+                        "COLOR_TEXT4": "#8CD0D3",
+                        "COLOR_TEXT5": "#E3CEAB",
+                        "COLOR_PLUS": [
+                            "#DCDCCC"
+                        ]
                     }
                 }
             }
